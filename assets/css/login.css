@@ -1,0 +1,124 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #5F6368;
+    color: #c9d1d9;
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Content */
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Title */
+.title {
+    font-size: 1.5rem;
+    color: #bababa;
+}
+
+/* Input Fields */
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #bababa;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #5F6368;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 0 0 8px #58a6ff;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #58a6ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1059ab;
+}
+
+/* Footer */
+.footer {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+.lottie-container {
+    @apply bg-white rounded-md shadow-md p-4 mb-4;
+    @apply border-gray-300;
+    @apply hover:border-gray-400;
+    @apply transition duration-200 ease-in-out;
+    width: 200%;
+    height: 300px;
+    /* adjust the height to fit your animation */
+}
