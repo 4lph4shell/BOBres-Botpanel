@@ -701,7 +701,7 @@ function plan_insert1($conn){
         $active5 = 1;
         $step5 = 10;
         $dates5 = time();
-        $rahgozars5 = 0;
+        $bobis5 = 0;
 //        if ($_POST['inbound_plan']) {
 //            $inbound_plans = $_POST['inbound_plan'];
 //        } else {
@@ -713,13 +713,13 @@ function plan_insert1($conn){
         $count_plans5 = 0;
 //        }
         $insert_plans_sql5 = "INSERT INTO server_plans (fileid,catid,server_id,inbound_id,acount,
-                          limitip,title,protocol,days,volume,type,price,descr,pic,active,step,date,rahgozar)
+                          limitip,title,protocol,days,volume,type,price,descr,pic,active,step,date,bobi)
                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 		$stmt = $conn->prepare($insert_plans_sql5);
 		$stmt->bind_param('iiiiiissiisissiiis', $fileid5, $name_category_plans5, $name_servers_plans5, $inbound_plans5, $count_plans5,
 			$limitip_plans5, $title_plans5, $protocol_plans5, $days_plans5, $volume_plans5, $type_plans5, $price_plans5, $descriptions5, $pic5,
-			$active5, $step5, $dates5, $rahgozars5);
+			$active5, $step5, $dates5, $bobis5);
 		$stmt->execute();
 
         if (!$stmt) {
@@ -821,13 +821,13 @@ function plans1($conn) {
 				header("location: singleplans.php");
 				$dates = time();
 				$insert_plans_sql = "INSERT INTO server_plans (fileid,catid,server_id,inbound_id,acount,
-							  limitip,title,protocol,days,volume,type,price,descr,pic,active,step,date,rahgozar,dest,serverNames,spiderX,flow)
+							  limitip,title,protocol,days,volume,type,price,descr,pic,active,step,date,bobi,dest,serverNames,spiderX,flow)
 							  VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 				$stmt = $conn->prepare($insert_plans_sql);
 				$stmt->bind_param('iiiiiissiiiissiiisssss',$row_data['fileid'],$row_data['catid'],$row_data['server_id'],$row_data['inbound_id'],$row_data['acount'],$row_data['limitip'],$row_data['title'],$row_data['protocol'],
 									  $row_data['days'],$row_data['volume'],$row_data['type'],$row_data['price'],
 									  $row_data['descr'],$row_data['pic'],$row_data['active'],$row_data['step'],
-									  $dates,$row_data['rahgozar'],$row_data['dest'],$row_data['serverNames']
+									  $dates,$row_data['bobi'],$row_data['dest'],$row_data['serverNames']
 									  ,$row_data['spiderX'],$row_data['flow']);
 				$stmt->execute();
 				
@@ -891,15 +891,15 @@ function plan_insert2($conn){
         $active = 1;
         $step = 10;
         $dates = time();
-        $rahgozars = 0;
+        $bobis = 0;
         $inbound_plans = $_POST['inbound_plan'];
         $insert_plans_sql = "INSERT INTO server_plans (fileid,catid,server_id,inbound_id,acount,
-                          limitip,title,protocol,days,volume,type,price,descr,pic,active,step,date,rahgozar) 
+                          limitip,title,protocol,days,volume,type,price,descr,pic,active,step,date,bobi) 
                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		$stmt = $conn->prepare($insert_plans_sql);
 		$stmt->bind_param('iiiiiissiisissiiis', $fileid, $name_category_plans, $name_servers_plans, $inbound_plans, $count_plans,
 				$limitip_plans, $title_plans, $protocol_plans, $days_plans, $volume_plans, $type_plans, $price_plans, $descriptions, $pic, $active,
-				$step, $dates, $rahgozars);
+				$step, $dates, $bobis);
 		$stmt->execute();
 		
         if (!$stmt) {
@@ -1001,13 +1001,13 @@ function plans2($conn) {
 				header("location: multipleplans.php");
 				$dates = time();
 				$insert_plans_sql = "INSERT INTO server_plans (fileid,catid,server_id,inbound_id,acount,
-							  limitip,title,protocol,days,volume,type,price,descr,pic,active,step,date,rahgozar,dest,serverNames,spiderX,flow) 
+							  limitip,title,protocol,days,volume,type,price,descr,pic,active,step,date,bobi,dest,serverNames,spiderX,flow) 
 							  VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 				$stmt = $conn->prepare($insert_plans_sql);
 				$stmt->bind_param('iiiiiissiisissiiisssss', $row_data['fileid'],$row_data['catid'],$row_data['server_id'],$row_data['inbound_id'],$row_data['acount'],$row_data['limitip'],$row_data['title'],$row_data['protocol'],
 				$row_data['days'],$row_data['volume'],$row_data['type'],$row_data['price'],
 				$row_data['descr'],$row_data['pic'],$row_data['active'],$row_data['step'],
-				$dates,$row_data['rahgozar'],$row_data['dest'],$row_data['serverNames']
+				$dates,$row_data['bobi'],$row_data['dest'],$row_data['serverNames']
 				,$row_data['spiderX'],$row_data['flow']);
 				$stmt->execute();
 				
@@ -1026,7 +1026,7 @@ function plans2($conn) {
 
 
 }
-function rahgozar($conn) {
+function bobi($conn) {
     if (isset($_GET['delete'])) {
         $id_delete_server_plans = $_GET['delete'];
 		if(is_numeric($id_delete_server_plans)){
@@ -1042,7 +1042,7 @@ function rahgozar($conn) {
 			} else {
 				$stmt->close();
 				deletebobres();
-				header("location: rahgozar.php");
+				header("location: bobi.php");
 			}
 		}else return;
     }
@@ -1062,7 +1062,7 @@ function rahgozar($conn) {
 			} else {
 				$stmt->close();
 				statusonbobres();
-				header("location: rahgozar.php");
+				header("location: bobi.php");
 			}
 		}else return;
     }
@@ -1082,12 +1082,12 @@ function rahgozar($conn) {
 			} else {
 				$stmt->close();
 				statusoffbobres();
-				header("location: rahgozar.php");
+				header("location: bobi.php");
 			}
 		}else return;
     }
 }
-function plan_edit_rahgozar($conn){
+function plan_edit_bobi($conn){
     if (isset($_GET['edit'])) {
         $id_edit_select = $_GET['edit'];
 		if(is_numeric($id_edit_select)){
@@ -1105,15 +1105,15 @@ function plan_edit_rahgozar($conn){
 		}else return;
     }
 }
-class rahgozar_insert {
+class bobi_insert {
     private $conn;
 
     public function __construct($conn) {
         $this->conn = $conn;
     }
 
-    public function rahgozarRequest() {
-        if(isset($_POST['action']) && $_POST['action'] == 'insert_rahgozar') {
+    public function bobiRequest() {
+        if(isset($_POST['action']) && $_POST['action'] == 'insert_bobi') {
             $this->sanitizeInput($_POST);
 
             $title_plans = $_POST['title_plan'];
@@ -1131,7 +1131,7 @@ class rahgozar_insert {
             $active = 1;
             $step = 10;
             $dates = time();
-            $rahgozar_status = 1;
+            $bobi_status = 1;
 //            $custom_paths = 1;
 //            $custom_ports = 0;
 //            $custom_snis = null;
@@ -1169,14 +1169,14 @@ class rahgozar_insert {
 //            $custom_snis = isset($_POST['custom_sni_plan']) ? $_POST['custom_sni_plan'] : null;
 
             $insert_plans_sql = "INSERT INTO server_plans (fileid, catid, server_id, inbound_id, acount,
-            limitip, title, protocol, days, volume, type, price, descr, pic, active, step, date, rahgozar)
+            limitip, title, protocol, days, volume, type, price, descr, pic, active, step, date, bobi)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?, ?)";
-//            '$price_plans', '$descriptions', '$pic', '$active', '$step', '$dates', '$rahgozar_status','$custom_paths','$custom_ports',DEFAULT)";
+//            '$price_plans', '$descriptions', '$pic', '$active', '$step', '$dates', '$bobi_status','$custom_paths','$custom_ports',DEFAULT)";
 			
 			$stmt = $this->conn->prepare($insert_plans_sql);
 			$stmt->bind_param('iiiiiissiisissiiis', $fileid, $name_category_plans, $name_servers_plans, $inbound_plans, $acount_plans,
             $limitip_plans, $title_plans, $protocol_plans, $days_plans, $volume_plans, $type_plans,
-            $price_plans, $descriptions, $pic, $active, $step, $dates, $rahgozar_status);
+            $price_plans, $descriptions, $pic, $active, $step, $dates, $bobi_status);
 			$stmt->execute();
 			
             if (!$stmt) {
@@ -1186,7 +1186,7 @@ class rahgozar_insert {
             } else {
 				$stmt->close();
                 creatbobres();
-                header('Location: rahgozar.php');
+                header('Location: bobi.php');
             }
         }
     }

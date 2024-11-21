@@ -98,13 +98,13 @@ $(document).ready(function () {
     });
 });
 $(document).ready(function () {
-    $("#insert_rahgozar").submit(function (event) {
+    $("#insert_bobi").submit(function (event) {
         event.preventDefault();
         var formData = $(this).serialize();
         $.ajax({
-            url: "rahgozar.php",
+            url: "bobi.php",
             type: "POST",
-            data: $(this).serialize() + "&action=insert_rahgozar",
+            data: $(this).serialize() + "&action=insert_bobi",
             success: function (response) {
                 $("#result").html(response);
             }

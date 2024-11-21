@@ -176,14 +176,14 @@ if (file_exists($lang_file)) {
             aria-hidden="true"></span>
         <a
             class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-            href="rahgozar.php">
+            href="bobi.php">
             <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="21"
                 height="21">
                 <path d="M23,12.5A1.5,1.5,0,0,1,21.5,14H18.63a3.516,3.516,0,0,1-3-1.7l-1.225-2.034-1.79,4.363,2.614,1.487A3.507,3.507,0,0,1,17,19.163V22.5a1.5,1.5,0,0,1-3,0V19.163a.5.5,0,0,0-.252-.434L9.666,16.406a3.511,3.511,0,0,1-1.427-4.322L9.5,9H7.736a.5.5,0,0,0-.447.277L5.842,12.171a1.5,1.5,0,0,1-2.684-1.342L4.605,7.935A3.483,3.483,0,0,1,7.736,6H13.36a3.516,3.516,0,0,1,3,1.7L18.2,10.758A.5.5,0,0,0,18.63,11H21.5A1.5,1.5,0,0,1,23,12.5ZM8.057,16.85a1.5,1.5,0,0,0-1.95.836A.5.5,0,0,1,5.643,18H3.5a1.5,1.5,0,0,0,0,3H5.643a3.484,3.484,0,0,0,3.25-2.2A1.5,1.5,0,0,0,8.057,16.85ZM14.5,5A2.5,2.5,0,1,0,12,2.5,2.5,2.5,0,0,0,14.5,5Z" />
             </svg>
 
 
-            <span class="ml-4"><?php echo $_LANG['Rahgozar'] ?></span>
+            <span class="ml-4"><?php echo $_LANG['Bobi'] ?></span>
         </a>
     </li>
     <li class="relative px-6 py-3">
@@ -517,14 +517,14 @@ if (file_exists($lang_file)) {
                     aria-hidden="true"></span>
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-700 text-gray-800"
-                    href="rahgozar.php">
+                    href="bobi.php">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
                         width="21" height="21">
                         <path d="M23,12.5A1.5,1.5,0,0,1,21.5,14H18.63a3.516,3.516,0,0,1-3-1.7l-1.225-2.034-1.79,4.363,2.614,1.487A3.507,3.507,0,0,1,17,19.163V22.5a1.5,1.5,0,0,1-3,0V19.163a.5.5,0,0,0-.252-.434L9.666,16.406a3.511,3.511,0,0,1-1.427-4.322L9.5,9H7.736a.5.5,0,0,0-.447.277L5.842,12.171a1.5,1.5,0,0,1-2.684-1.342L4.605,7.935A3.483,3.483,0,0,1,7.736,6H13.36a3.516,3.516,0,0,1,3,1.7L18.2,10.758A.5.5,0,0,0,18.63,11H21.5A1.5,1.5,0,0,1,23,12.5ZM8.057,16.85a1.5,1.5,0,0,0-1.95.836A.5.5,0,0,1,5.643,18H3.5a1.5,1.5,0,0,0,0,3H5.643a3.484,3.484,0,0,0,3.25-2.2A1.5,1.5,0,0,0,8.057,16.85ZM14.5,5A2.5,2.5,0,1,0,12,2.5,2.5,2.5,0,0,0,14.5,5Z" />
                     </svg>
 
 
-                    <span class="ml-4"><?php echo $_LANG['Rahgozar'] ?></span>
+                    <span class="ml-4"><?php echo $_LANG['Bobi'] ?></span>
                 </a>
             </li>
             <li class="relative px-6 py-3">
@@ -696,7 +696,7 @@ if (file_exists($lang_file)) {
                     <path d="M23,12.5A1.5,1.5,0,0,1,21.5,14H18.63a3.516,3.516,0,0,1-3-1.7l-1.225-2.034-1.79,4.363,2.614,1.487A3.507,3.507,0,0,1,17,19.163V22.5a1.5,1.5,0,0,1-3,0V19.163a.5.5,0,0,0-.252-.434L9.666,16.406a3.511,3.511,0,0,1-1.427-4.322L9.5,9H7.736a.5.5,0,0,0-.447.277L5.842,12.171a1.5,1.5,0,0,1-2.684-1.342L4.605,7.935A3.483,3.483,0,0,1,7.736,6H13.36a3.516,3.516,0,0,1,3,1.7L18.2,10.758A.5.5,0,0,0,18.63,11H21.5A1.5,1.5,0,0,1,23,12.5ZM8.057,16.85a1.5,1.5,0,0,0-1.95.836A.5.5,0,0,1,5.643,18H3.5a1.5,1.5,0,0,0,0,3H5.643a3.484,3.484,0,0,0,3.25-2.2A1.5,1.5,0,0,0,8.057,16.85ZM14.5,5A2.5,2.5,0,1,0,12,2.5,2.5,2.5,0,0,0,14.5,5Z" />
                 </svg>
 
-                <span class="ml-4"><?php echo $_LANG['Rahgozar'] ?></span>
+                <span class="ml-4"><?php echo $_LANG['Bobi'] ?></span>
                 <span class="ml-4 justify-end inline-flex">
                     <button @click="openModal"
                         class=" text-sm font-medium leading-5 text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none ">
@@ -708,11 +708,11 @@ if (file_exists($lang_file)) {
 
             <div style='margin-top:40px' class=" w-full flex justify-center items-center grid gap-6 mb-8 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1">
                 <?php
-                rahgozar($conn);
+                bobi($conn);
                 ?>
                 <?php
 
-                $sql_plans = "SELECT * FROM server_plans where rahgozar = 1 ORDER BY id DESC";
+                $sql_plans = "SELECT * FROM server_plans where bobi = 1 ORDER BY id DESC";
                 $stmt = $conn->prepare($sql_plans);
                 $stmt->execute();
                 $result_plans = $stmt->get_result();
@@ -757,18 +757,18 @@ if (file_exists($lang_file)) {
                     }
 
                     echo '<div class="flex items-center justify-center w-full gap-4 mt-3">
-                    <a href="rahgozar.php?edit=' . $row_plans['id'] . '">
+                    <a href="bobi.php?edit=' . $row_plans['id'] . '">
                     <svg class="m-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" fill="#9dbebb"><g id="_01_align_center" data-name="01 align center"><path d="M10.931,2.75a3.728,3.728,0,0,0-7.195,0H0v2H3.736a3.728,3.728,0,0,0,7.195,0H24v-2ZM7.333,5.5a1.75,1.75,0,1,1,1.75-1.75A1.753,1.753,0,0,1,7.333,5.5Z"/><path d="M16.667,8.25A3.745,3.745,0,0,0,13.07,11H0v2H13.07a3.727,3.727,0,0,0,7.194,0H24V11H20.264A3.745,3.745,0,0,0,16.667,8.25Zm0,5.5A1.75,1.75,0,1,1,18.417,12,1.752,1.752,0,0,1,16.667,13.75Z"/><path d="M7.333,16.5a3.745,3.745,0,0,0-3.6,2.75H0v2H3.736a3.728,3.728,0,0,0,7.195,0H24v-2H10.931A3.745,3.745,0,0,0,7.333,16.5Zm0,5.5a1.75,1.75,0,1,1,1.75-1.75A1.753,1.753,0,0,1,7.333,22Z"/></g></svg>
                     </a>
-                    <a href="rahgozar.php?delete=' . $row_plans['id'] . '">
+                    <a href="bobi.php?delete=' . $row_plans['id'] . '">
                     <svg class="m-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" fill="#ff758f"><g id="_01_align_center" data-name="01 align center"><path d="M18.965,8.464l5.029-5.029L22.565,2.006,17.519,7.051,15.313,4.895a2.011,2.011,0,0,0-2.724-.073A19.71,19.71,0,0,1,6.226,8.687L-.006,10.514v.756A12.892,12.892,0,0,0,13.006,24.006h1.241l.261-.182a14.98,14.98,0,0,0,6.886-12.081,2.013,2.013,0,0,0-.611-1.5ZM13.9,6.34l5.477,5.341a12.652,12.652,0,0,1-.456,3.015L11.941,7.9A24.691,24.691,0,0,0,13.9,6.34Zm-.294,15.645h-.6a11.153,11.153,0,0,1-4.293-.859,11.55,11.55,0,0,0,4.348-3.8l.518-.76L11.91,15.43l-.518.761A9.539,9.539,0,0,1,7.8,19.324l-1.229.618a10.9,10.9,0,0,1-2.585-2.563,11.632,11.632,0,0,0,4.357-2.657L6.932,13.277a9.611,9.611,0,0,1-3.974,2.317,10.4,10.4,0,0,1-.921-3.575l4.755-1.394a15.234,15.234,0,0,0,3.423-1.59l7.911,7.7A14.1,14.1,0,0,1,13.608,21.985Z"/></g></svg>
                     </a>';
                     if ($row_plans['active'] == '1') {
-                        echo '<a href="rahgozar.php?off=' . $row_plans['id'] . '">
+                        echo '<a href="bobi.php?off=' . $row_plans['id'] . '">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="m-2" width="27" fill="#219ebc"><path d="M23.821,11.181v0C22.943,9.261,19.5,3,12,3S1.057,9.261.179,11.181a1.969,1.969,0,0,0,0,1.64C1.057,14.739,4.5,21,12,21s10.943-6.261,11.821-8.181A1.968,1.968,0,0,0,23.821,11.181ZM12,18a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,18Z"/><circle cx="12" cy="12" r="4"/></svg>
                     </a>';
                     } else {
-                        echo '<a href="rahgozar.php?on=' . $row_plans['id'] . '">
+                        echo '<a href="bobi.php?on=' . $row_plans['id'] . '">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="m-2" width="27" fill="#bde0fe"><path d="M23.821,11.181v0C22.943,9.261,19.5,3,12,3S1.057,9.261.179,11.181a1.969,1.969,0,0,0,0,1.64C1.057,14.739,4.5,21,12,21s10.943-6.261,11.821-8.181A1.968,1.968,0,0,0,23.821,11.181ZM12,18a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,18Z"/><circle cx="12" cy="12" r="4"/></svg>
                     </a>';
                     }
@@ -782,7 +782,7 @@ if (file_exists($lang_file)) {
 
 
             <?php
-            $plan_edit = plan_edit_rahgozar($conn);
+            $plan_edit = plan_edit_bobi($conn);
             if (is_array($plan_edit) || is_object($plan_edit)) {
                 foreach (
                     $plan_edit
@@ -1055,7 +1055,7 @@ if (file_exists($lang_file)) {
                 } else {
                     $stmt->close();
                     editbobres();
-                    header("location: rahgozar.php");
+                    header("location: bobi.php");
                 }
             }
             ?>
@@ -1093,14 +1093,14 @@ if (file_exists($lang_file)) {
         id="modal">
 
         <?php
-        $serverHandler = new rahgozar_insert($conn);
-        $serverHandler->rahgozarRequest();
+        $serverHandler = new bobi_insert($conn);
+        $serverHandler->bobiRequest();
         ?>
-        <form id="insert_rahgozar">
+        <form id="insert_bobi">
             <!-- Modal body -->
             <div style="height: 300px;overflow-y: scroll;">
                 <p class="m-4 dark:text-gray-200 text-gray-700">
-                    <?php echo $_LANG['AddRahgozar'] ?>
+                    <?php echo $_LANG['AddBobi'] ?>
                 </p>
                 <div class="flex relative m-2">
                     <span class="dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
